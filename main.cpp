@@ -19,6 +19,48 @@ int main(){
         if(frame.empty()) break;
 
         cv::remap(frame, und, map1, map2, cv::INTER_LINEAR);
+
+        auto hsv = cv::cvtColor(und, cv::COLOR_BGR2HSV);
+
+        //青色の範囲
+        cv::Scalar lower_blue(100, 150, 0);
+        cv::Scalar upper_blue(140, 255, 255);
+
+        cv::Mat mask;
+        cv::inRange(hsv, lower_blue, upper_blue, mask);
+
+        //ノイズ除去
+        // auto kernel = 
+        cv::morphologyEx(mask, mask, cv::MORPH_OPEN, cv::Mat(), cv::Point(-1,-1), 2);
+        cv::morphologyEx(mask, mask, cv::MORPH_CLOSE, cv::Mat(), cv::Point(-1,-1), 2);
+
+        //輪郭検出
+        std::vector<std::vector<cv::Point>> contours;
+        cv::findContours(mask, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
+
+        constexpr uint32_t area_min = 500;
+        constexpr uint32_t area_max = 1000;
+
+        //円形度閾値
+        constexpr double circularity_threshold = 0.7;
+
+        for(const auto& contour : contours){
+            double area = cv::contourArea(contour);
+            if(area < area_min || area > area_max) continue;
+
+            double perimeter = cv::arcLength(contour, true);
+            double circularity = 4 * CV_PI * area / (perimeter * perimeter);
+            if(circularity < circularity_threshold) continue;
+
+            cv::Moments mu = cv::moments(contour);
+            cv::Point2f center(mu.m10/mu.m00, mu.m01/mu.m00);
+            float radius;
+            cv::minEnclosingCircle(contour, center, radius);
+
+            cv::circle(und, center, static_cast<int>(radius), cv::Scalar(0, 255, 0), 2);
+            cv::circle(und, center, 2, cv::Scalar(0, 0, 255), -1);
+        }
+
         cv::imshow("undistorted", und);
 
         if(cv::waitKey(1) == 'q') break;
