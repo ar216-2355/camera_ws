@@ -29,10 +29,10 @@ int main(){
         cv::cvtColor(und, hsv, cv::COLOR_BGR2HSV);
 
         //青色の範囲
-        cv::Scalar lower_red1 = np.array([0, 100, 10])
-        cv::Scalar upper_red1 = np.array([10, 255, 255])
-        cv::Scalar lower_red2 = np.array([160, 100, 10])
-        cv::Scalar upper_red2 = np.array([179, 255, 255])
+        cv::Scalar lower_red1 = std::Scalar(0, 100, 10); 
+        cv::Scalar upper_red1 = std::Scalar(10, 255, 255);
+        cv::Scalar lower_red2 = std::Scalar(160, 100, 10);
+        cv::Scalar upper_red2 = std::Scalar(179, 255, 255);
 
         cv::Mat mask1, mask2, mask;
         cv::inRange(hsv, lower_red1, upper_red1, mask1);
