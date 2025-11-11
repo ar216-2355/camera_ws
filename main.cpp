@@ -1,4 +1,5 @@
 #include <opencv2/opencv.hpp>
+#include <vector>
 
 int main(){
     cv::FileStorage fs("camera_calib.yml", cv::FileStorage::READ);
@@ -24,7 +25,8 @@ int main(){
 
         cv::remap(frame, und, map1, map2, cv::INTER_LINEAR);
 
-        auto hsv = cv::cvtColor(und, cv::COLOR_BGR2HSV);
+        auto hsv = cv::Mat();
+        cv::cvtColor(und, hsv, cv::COLOR_BGR2HSV);
 
         //青色の範囲
         cv::Scalar lower_blue(100, 150, 0);
