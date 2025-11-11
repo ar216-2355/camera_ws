@@ -5,7 +5,7 @@
 
 int main() {
     // --------- ユーザー設定 ----------
-    const cv::Size boardSize(9, 6); // 内部コーナー数 (columns, rows)
+    const cv::Size boardSize(8, 6); // 内部コーナー数 (columns, rows)
     const float squareSize = 25.0f; // 1マスのサイズ(mm) — 実測値に置き換える
     const int requiredSamples = 20; // 集める画像数
     const std::string outYaml = "camera_calib.yml";
@@ -16,6 +16,10 @@ int main() {
         std::cerr << "カメラを開けませんでした\n";
         return -1;
     }
+
+    cap.set(cv::CAP_PROP_FRAME_WIDTH, 640);
+    cap.set(cv::CAP_PROP_FRAME_HEIGHT, 480);
+    cap.set(cv::CAP_PROP_FPS, 30);
 
     std::vector<std::vector<cv::Point2f>> imagePoints;
     std::vector<std::vector<cv::Point3f>> objectPoints;

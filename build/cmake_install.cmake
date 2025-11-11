@@ -1,4 +1,4 @@
-# Install script for directory: /home/crs3/camera_ws
+# Install script for directory: /home/crs3/camera_ws/camera_ws
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/crs3/camera_ws/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/crs3/camera_ws/camera_ws/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

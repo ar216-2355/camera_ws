@@ -1,4 +1,4 @@
-CMakeFiles/test.dir/test.cpp.o: /home/crs3/camera_ws/test.cpp \
+CMakeFiles/test.dir/test.cpp.o: /home/crs3/camera_ws/camera_ws/test.cpp \
  /usr/include/stdc-predef.h /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/include/opencv4/opencv2/core.hpp \
