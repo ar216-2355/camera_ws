@@ -29,11 +29,15 @@ int main(){
         cv::cvtColor(und, hsv, cv::COLOR_BGR2HSV);
 
         //青色の範囲
-        cv::Scalar lower_blue(100, 150, 0);
-        cv::Scalar upper_blue(140, 255, 255);
+        cv::Scalar lower_red1 = np.array([0, 100, 10])
+        cv::Scalar upper_red1 = np.array([10, 255, 255])
+        cv::Scalar lower_red2 = np.array([160, 100, 10])
+        cv::Scalar upper_red2 = np.array([179, 255, 255])
 
-        cv::Mat mask;
-        cv::inRange(hsv, lower_blue, upper_blue, mask);
+        cv::Mat mask1, mask2, mask;
+        cv::inRange(hsv, lower_red1, upper_red1, mask1);
+        cv::inRange(hsv, lower_red2, upper_red2, mask2);
+        cv::bitwise_or(mask1, mask2, mask);
 
         //ノイズ除去
         // auto kernel = 
