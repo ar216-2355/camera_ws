@@ -8,6 +8,10 @@ int main(){
     fs.release();
 
     cv::VideoCapture cap(0);
+
+    cap.set(cv::CAP_PROP_FRAME_WIDTH, 640);
+    cap.set(cv::CAP_PROP_FRAME_HEIGHT, 480);
+    cap.set(cv::CAP_PROP_FPS, 30);
     cv::Mat frame, und, map1, map2;
 
     cv::Size imageSize(640, 480); // 実際のキャプチャサイズに合わせる
