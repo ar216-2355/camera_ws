@@ -101,11 +101,77 @@ int main(int argc, char** argv) {
         if (frame.empty()) break;
 
         cv::remap(frame, und, map1, map2, cv::INTER_LINEAR);
+        // === HSV変換 ===
         cv::cvtColor(und, hsv, cv::COLOR_BGR2HSV);
-        cv::cvtColor(und, gray, cv::COLOR_BGR2GRAY);
-        cv::threshold(gray, mask, 60, 255, cv::THRESH_BINARY_INV);
-        // cv::imshow("gray", gray);
-        cv::imshow("mask", mask);
+        // cv::cvtColor(und, gray, cv::COLOR_BGR2GRAY);
+        // cv::threshold(gray, mask, 60, 255, cv::THRESH_BINARY_INV);
+        // // cv::imshow("gray", gray);
+        // cv::imshow("mask", mask);
+        
+
+// --- GUI初期化（1回だけ） ---
+static bool trackbar_initialized = false;
+static int h_low_r = 0, h_high_r = 10, s_low_r = 80, s_high_r = 255, v_low_r = 80, v_high_r = 255;
+static int h_low_r2 = 160, h_high_r2 = 179; // 赤の2つ目領域
+static int h_low_b = 100, h_high_b = 130, s_low_b = 80, s_high_b = 255, v_low_b = 80, v_high_b = 255;
+static int h_low_y = 20, h_high_y = 40, s_low_y = 80, s_high_y = 255, v_low_y = 80, v_high_y = 255;
+
+if (!trackbar_initialized) {
+    cv::namedWindow("mask", cv::WINDOW_NORMAL);
+    cv::resizeWindow("mask", 480, 360);
+
+    // 赤1
+    cv::createTrackbar("R1_H_low", "mask", &h_low_r, 179);
+    cv::createTrackbar("R1_H_high", "mask", &h_high_r, 179);
+    cv::createTrackbar("R_S_low", "mask", &s_low_r, 255);
+    cv::createTrackbar("R_S_high", "mask", &s_high_r, 255);
+    cv::createTrackbar("R_V_low", "mask", &v_low_r, 255);
+    cv::createTrackbar("R_V_high", "mask", &v_high_r, 255);
+
+    // 赤2
+    cv::createTrackbar("R2_H_low", "mask", &h_low_r2, 179);
+    cv::createTrackbar("R2_H_high", "mask", &h_high_r2, 179);
+
+    // 青
+    cv::createTrackbar("B_H_low", "mask", &h_low_b, 179);
+    cv::createTrackbar("B_H_high", "mask", &h_high_b, 179);
+    cv::createTrackbar("B_S_low", "mask", &s_low_b, 255);
+    cv::createTrackbar("B_S_high", "mask", &s_high_b, 255);
+    cv::createTrackbar("B_V_low", "mask", &v_low_b, 255);
+    cv::createTrackbar("B_V_high", "mask", &v_high_b, 255);
+
+    // 黄
+    cv::createTrackbar("Y_H_low", "mask", &h_low_y, 179);
+    cv::createTrackbar("Y_H_high", "mask", &h_high_y, 179);
+    cv::createTrackbar("Y_S_low", "mask", &s_low_y, 255);
+    cv::createTrackbar("Y_S_high", "mask", &s_high_y, 255);
+    cv::createTrackbar("Y_V_low", "mask", &v_low_y, 255);
+    cv::createTrackbar("Y_V_high", "mask", &v_high_y, 255);
+
+    trackbar_initialized = true;
+}
+
+// --- HSV範囲に基づくマスク作成 ---
+cv::Mat mask_r1, mask_r2, mask_r, mask_b, mask_y, mask;
+
+cv::inRange(hsv, cv::Scalar(h_low_r, s_low_r, v_low_r), cv::Scalar(h_high_r, s_high_r, v_high_r), mask_r1);
+cv::inRange(hsv, cv::Scalar(h_low_r2, s_low_r, v_low_r), cv::Scalar(h_high_r2, s_high_r, v_high_r), mask_r2);
+cv::bitwise_or(mask_r1, mask_r2, mask_r);
+
+cv::inRange(hsv, cv::Scalar(h_low_b, s_low_b, v_low_b), cv::Scalar(h_high_b, s_high_b, v_high_b), mask_b);
+cv::inRange(hsv, cv::Scalar(h_low_y, s_low_y, v_low_y), cv::Scalar(h_high_y, s_high_y, v_high_y), mask_y);
+
+// --- 色ごとのマスク統合 ---
+cv::bitwise_or(mask_r, mask_b, mask);
+cv::bitwise_or(mask, mask_y, mask);
+
+// --- ノイズ除去 ---
+cv::morphologyEx(mask, mask, cv::MORPH_OPEN, cv::Mat(), cv::Point(-1,-1), 2);
+cv::morphologyEx(mask, mask, cv::MORPH_CLOSE, cv::Mat(), cv::Point(-1,-1), 2);
+
+// --- 確認用ウィンドウ ---
+cv::imshow("mask", mask);
+
 
         std::vector<std::vector<cv::Point>> contours;
         cv::findContours(mask, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
