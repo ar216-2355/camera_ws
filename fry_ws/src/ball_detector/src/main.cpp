@@ -47,7 +47,8 @@ int main(int argc, char** argv) {
     double fy = cameraMatrix.at<double>(1, 1);
     double cx = cameraMatrix.at<double>(0, 2);
     double cy = cameraMatrix.at<double>(1, 2);
-    std::cout << "Camera fx=" << fx << ", fy=" << fy << std::endl;
+    // std::cout << "Camera fx=" << fx << ", fy=" << fy << std::endl;
+    RCLCPP_INFO(logger_, "Camera fx=%.2f, fy=%.2f", fx, fy);
 
     // === カメラ設定 ===
     cv::VideoCapture cap(0);
