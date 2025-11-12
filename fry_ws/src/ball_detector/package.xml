@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>ball_detector</name>
+  <version>0.0.1</version>
+  <description>Camera-based ball detector using OpenCV and ROS2</description>
+
+  <maintainer email="mihiro.furuya@gmail.com">Mihiro Furuya</maintainer>
+  <license>MIT</license>
+
+  <!-- 依存関係 -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>geometry_msgs</depend>
+
+  <!-- OpenCV は system library として find_package で読み込む -->
+  <exec_depend>opencv</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
