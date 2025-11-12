@@ -224,7 +224,7 @@ cv::imshow("mask", mask);
             pub->publish(msg);
         }
 
-        // cv::imshow("undistorted", und);
+        cv::imshow("undistorted", und);
         if (cv::waitKey(1) == 'q') break;
         rclcpp::spin_some(node);
     }
