@@ -4,6 +4,8 @@
 #include <opencv2/opencv.hpp>
 #include <iostream>
 #include <vector>
+#include <ament_index_cpp/get_package_share_directory.hpp>
+#include <filesystem>
 
 using namespace std;
 
@@ -36,7 +38,12 @@ int main(int argc, char** argv) {
     RCLCPP_INFO(logger_, "Publisher created.");
 
     // === カメラパラメータ読み込み ===
-    cv::FileStorage fs("camera_calib.yml", cv::FileStorage::READ);
+    // cv::FileStorage fs("camera_calib.yml", cv::FileStorage::READ);
+    std::string pkg_share_dir = ament_index_cpp::get_package_share_directory("ball_detector");
+    std::string calib_path = pkg_share_dir + "/camera_calib.yml";
+
+    cv::FileStorage fs(calib_path, cv::FileStorage::READ);
+
     cv::Mat cameraMatrix, distCoeffs;
     fs["camera_matrix"] >> cameraMatrix;
     fs["distortion_coefficients"] >> distCoeffs;

@@ -18,6 +18,8 @@ add_executable(ball_detector_node src/main.cpp)
 ament_target_dependencies(ball_detector_node rclcpp geometry_msgs)
 target_link_libraries(ball_detector_node ${OpenCV_LIBS})
 
+install(FILES camera_calib.yml DESTINATION share/${PROJECT_NAME})
+
 # --- インストール設定 ---
 install(TARGETS
   ball_detector_node
