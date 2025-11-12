@@ -38,11 +38,12 @@ int main(int argc, char** argv) {
     RCLCPP_INFO(logger_, "Publisher created.");
 
     // === カメラパラメータ読み込み ===
-    cv::FileStorage fs("camera_calib.yml", cv::FileStorage::READ);
+    cv::FileStorage fs("/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/camera_calib.yml", cv::FileStorage::READ);
     // std::string pkg_share_dir = ament_index_cpp::get_package_share_directory("ball_detector");
     // std::string calib_path = pkg_share_dir + "/camera_calib.yml";
 
     // cv::FileStorage fs(calib_path, cv::FileStorage::READ);
+    RCLCPP_INFO(logger_, "yml file loaded.");
 
     cv::Mat cameraMatrix, distCoeffs;
     fs["camera_matrix"] >> cameraMatrix;
@@ -103,13 +104,15 @@ int main(int argc, char** argv) {
         cv::cvtColor(und, hsv, cv::COLOR_BGR2HSV);
         cv::cvtColor(und, gray, cv::COLOR_BGR2GRAY);
         cv::threshold(gray, mask, 60, 255, cv::THRESH_BINARY_INV);
+        // cv::imshow("gray", gray);
+        cv::imshow("mask", mask);
 
         std::vector<std::vector<cv::Point>> contours;
         cv::findContours(mask, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
 
         for (const auto& contour : contours) {
             double area = cv::contourArea(contour);
-            if (area < 300) continue;
+            if (area < 300 || 640 * 480 / 2 < area) continue;
             double perimeter = cv::arcLength(contour, true);
             double circularity = 4 * CV_PI * area / (perimeter * perimeter);
             if (circularity < 0.7) continue;
@@ -155,7 +158,7 @@ int main(int argc, char** argv) {
             pub->publish(msg);
         }
 
-        cv::imshow("undistorted", und);
+        // cv::imshow("undistorted", und);
         if (cv::waitKey(1) == 'q') break;
         rclcpp::spin_some(node);
     }
