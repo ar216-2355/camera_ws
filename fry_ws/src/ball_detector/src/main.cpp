@@ -29,8 +29,11 @@ struct HomographyMapper {
 
 int main(int argc, char** argv) {
     rclcpp::init(argc, argv);
+    rclcpp::Logger logger_ = rclcpp::get_logger("ball_detector");
+    RCLCPP_INFO(logger_, "Ball detector node started.");
     auto node = rclcpp::Node::make_shared("ball_publisher");
     auto pub = node->create_publisher<geometry_msgs::msg::PointStamped>("/ball_position", 10);
+    RCLCPP_INFO(logger_, "Publisher created.");
 
     // === カメラパラメータ読み込み ===
     cv::FileStorage fs("camera_calib.yml", cv::FileStorage::READ);
@@ -38,6 +41,7 @@ int main(int argc, char** argv) {
     fs["camera_matrix"] >> cameraMatrix;
     fs["distortion_coefficients"] >> distCoeffs;
     fs.release();
+    RCLCPP_INFO(logger_, "Camera parameters loaded.");
 
     double fx = cameraMatrix.at<double>(0, 0);
     double fy = cameraMatrix.at<double>(1, 1);
@@ -56,6 +60,8 @@ int main(int argc, char** argv) {
     cv::initUndistortRectifyMap(cameraMatrix, distCoeffs, cv::Mat(),
                                 cameraMatrix, cv::Size(640, 480), CV_16SC2, map1, map2);
 
+    RCLCPP_INFO(logger_, "Camera initialized.");
+
     // === ホモグラフィ設定 ===
     HomographyMapper mapper;
     std::vector<cv::Point2f> imgPts = {
@@ -65,11 +71,15 @@ int main(int argc, char** argv) {
         {-0.3, 0.3}, {0.3, 0.3}, {0.3, -0.3}, {-0.3, -0.3}};
     mapper.setPoints(imgPts, worldPts);
 
+    RCLCPP_INFO(logger_, "Homography mapper initialized.");
+
     // === パラメータ ===
     const double ball_radius_m = 0.15;  // 15 cm
     double camera_height_m = 0.40;      // 40 cm（変更可能）
 
     cv::Mat frame, und, hsv, gray, mask;
+
+    RCLCPP_INFO(logger_, "Starting main loop.");
 
     while (rclcpp::ok()) {
         cap >> frame;
