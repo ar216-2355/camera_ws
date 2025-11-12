@@ -43,6 +43,12 @@ int main(int argc, char** argv) {
     fs.release();
     RCLCPP_INFO(logger_, "Camera parameters loaded.");
 
+    cameraMatrix.convertTo(cameraMatrix, CV_64F);
+    distCoeffs.convertTo(distCoeffs, CV_64F);
+
+    // std::cout << "cameraMatrix size: " << cameraMatrix.size() << std::endl;
+    RCLCPP_INFO(logger_, "cameraMatrix size: %dx%d", cameraMatrix.rows, cameraMatrix.cols);
+
     double fx = cameraMatrix.at<double>(0, 0);
     double fy = cameraMatrix.at<double>(1, 1);
     double cx = cameraMatrix.at<double>(0, 2);
