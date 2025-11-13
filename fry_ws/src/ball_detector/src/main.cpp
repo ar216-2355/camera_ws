@@ -269,9 +269,9 @@ cv::imshow("mask", mask);
             geometry_msgs::msg::PointStamped msg;
             msg.header.stamp = node->now();
             msg.header.frame_id = "robot_base";
-            msg.point.x = xy.x;
-            msg.point.y = xy.y;
-            msg.point.z = Z;
+            msg.point.x = X_robot;
+            msg.point.y = Y_robot;
+            msg.point.z = Z_robot;
             pub->publish(msg);
         }
 
