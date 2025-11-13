@@ -1,0 +1,189 @@
+[0.020s] Invoking command in '/home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector -- -j4 -l4
+[0.103s] [ 50%] [32mBuilding CXX object CMakeFiles/ball_detector_node.dir/src/main.cpp.o[0m
+[4.525s] [01m[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[4.525s] [01m[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:57:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcv::Mat::at(int, int)[m[K’
+[4.525s]   250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << [01;31m[KPc.at(0,0)[m[K,-Pc.at(2,0),PC.at(1,0));
+[4.526s]       |                                                    [01;31m[K~~~~~^~~~~[m[K
+[4.526s] In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3773[m[K,
+[4.526s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[4.526s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.526s]                  from [01m[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:4[m[K:
+[4.526s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:938:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> _Tp& cv::Mat::[01;32m[Kat[m[K(int)[m[K’
+[4.526s]   938 | _Tp& [01;36m[KMat[m[K::at(int i0)
+[4.527s]       |      [01;36m[K^~~[m[K
+[4.527s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:938:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.527s] [01m[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:57:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[4.527s]   250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << [01;36m[KPc.at(0,0)[m[K,-Pc.at(2,0),PC.at(1,0));
+[4.527s]       |                                                    [01;36m[K~~~~~^~~~~[m[K
+[4.531s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1934:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const _Tp& cv::Mat::[01;32m[Kat[m[K(int) const[m[K’
+[4.531s]  1934 |     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(int i0=0) const;
+[4.531s]       |                                       [01;36m[K^~[m[K
+[4.532s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1934:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.532s] [01m[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:57:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[4.532s]   250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << [01;36m[KPc.at(0,0)[m[K,-Pc.at(2,0),PC.at(1,0));
+[4.532s]       |                                                    [01;36m[K~~~~~^~~~~[m[K
+[4.532s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:894:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> _Tp& cv::Mat::[01;32m[Kat[m[K(int, int)[m[K’
+[4.533s]   894 | _Tp& [01;36m[KMat[m[K::at(int i0, int i1)
+[4.533s]       |      [01;36m[K^~~[m[K
+[4.533s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:894:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.533s] [01m[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:57:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_Tp[m[K’
+[4.534s]   250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << [01;36m[KPc.at(0,0)[m[K,-Pc.at(2,0),PC.at(1,0));
+[4.534s]       |                                                    [01;36m[K~~~~~^~~~~[m[K
+[4.535s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1944:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const _Tp& cv::Mat::[01;32m[Kat[m[K(int, int) const[m[K’
+[4.535s]  1944 |     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(int row, int col) const;
+[4.535s]       |                                       [01;36m[K^~[m[K
+[4.535s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1944:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.535s] [01m[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:57:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_Tp[m[K’
+[4.535s]   250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << [01;36m[KPc.at(0,0)[m[K,-Pc.at(2,0),PC.at(1,0));
+[4.536s]       |                                                    [01;36m[K~~~~~^~~~~[m[K
+[4.536s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1951:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> _Tp& cv::Mat::[01;32m[Kat[m[K(int, int, int)[m[K’
+[4.536s]  1951 |     template<typename _Tp> _Tp& [01;36m[Kat[m[K(int i0, int i1, int i2);
+[4.536s]       |                                 [01;36m[K^~[m[K
+[4.536s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1951:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.536s] [01m[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:57:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+[4.537s]   250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << [01;36m[KPc.at(0,0)[m[K,-Pc.at(2,0),PC.at(1,0));
+[4.537s]       |                                                    [01;36m[K~~~~~^~~~~[m[K
+[4.537s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1957:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const _Tp& cv::Mat::[01;32m[Kat[m[K(int, int, int) const[m[K’
+[4.537s]  1957 |     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(int i0, int i1, int i2) const;
+[4.537s]       |                                       [01;36m[K^~[m[K
+[4.537s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1957:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.538s] [01m[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:57:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+[4.538s]   250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << [01;36m[KPc.at(0,0)[m[K,-Pc.at(2,0),PC.at(1,0));
+[4.538s]       |                                                    [01;36m[K~~~~~^~~~~[m[K
+[4.538s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1962:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> _Tp& cv::Mat::[01;32m[Kat[m[K(const int*)[m[K’
+[4.539s]  1962 |     template<typename _Tp> _Tp& [01;36m[Kat[m[K(const int* idx);
+[4.539s]       |                                 [01;36m[K^~[m[K
+[4.539s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1962:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.539s] [01m[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:57:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[4.539s]   250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << [01;36m[KPc.at(0,0)[m[K,-Pc.at(2,0),PC.at(1,0));
+[4.539s]       |                                                    [01;36m[K~~~~~^~~~~[m[K
+[4.540s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1966:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const _Tp& cv::Mat::[01;32m[Kat[m[K(const int*) const[m[K’
+[4.540s]  1966 |     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(const int* idx) const;
+[4.540s]       |                                       [01;36m[K^~[m[K
+[4.540s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1966:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.540s] [01m[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:57:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[4.540s]   250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << [01;36m[KPc.at(0,0)[m[K,-Pc.at(2,0),PC.at(1,0));
+[4.541s]       |                                                    [01;36m[K~~~~~^~~~~[m[K
+[4.541s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1969:40:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int n> _Tp& cv::Mat::[01;32m[Kat[m[K(const cv::Vec<int, n>&)[m[K’
+[4.541s]  1969 |     template<typename _Tp, int n> _Tp& [01;36m[Kat[m[K(const Vec<int, n>& idx);
+[4.541s]       |                                        [01;36m[K^~[m[K
+[4.541s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1969:40:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.541s] [01m[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:57:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst cv::Vec<int, n>[m[K’ and ‘[01m[Kint[m[K’
+[4.542s]   250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << [01;36m[KPc.at(0,0)[m[K,-Pc.at(2,0),PC.at(1,0));
+[4.542s]       |                                                    [01;36m[K~~~~~^~~~~[m[K
+[4.542s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1971:46:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int n> const _Tp& cv::Mat::[01;32m[Kat[m[K(const cv::Vec<int, n>&) const[m[K’
+[4.542s]  1971 |     template<typename _Tp, int n> const _Tp& [01;36m[Kat[m[K(const Vec<int, n>& idx) const;
+[4.542s]       |                                              [01;36m[K^~[m[K
+[4.542s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1971:46:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.543s] [01m[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:57:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst cv::Vec<int, n>[m[K’ and ‘[01m[Kint[m[K’
+[4.543s]   250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << [01;36m[KPc.at(0,0)[m[K,-Pc.at(2,0),PC.at(1,0));
+[4.543s]       |                                                    [01;36m[K~~~~~^~~~~[m[K
+[4.543s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1977:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> _Tp& cv::Mat::[01;32m[Kat[m[K(cv::Point)[m[K’
+[4.543s]  1977 |     template<typename _Tp> _Tp& [01;36m[Kat[m[K(Point pt);
+[4.544s]       |                                 [01;36m[K^~[m[K
+[4.544s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1977:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.544s] [01m[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:57:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[4.544s]   250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << [01;36m[KPc.at(0,0)[m[K,-Pc.at(2,0),PC.at(1,0));
+[4.544s]       |                                                    [01;36m[K~~~~~^~~~~[m[K
+[4.544s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1982:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const _Tp& cv::Mat::[01;32m[Kat[m[K(cv::Point) const[m[K’
+[4.545s]  1982 |     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(Point pt) const;
+[4.545s]       |                                       [01;36m[K^~[m[K
+[4.545s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1982:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.545s] [01m[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:57:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[4.545s]   250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << [01;36m[KPc.at(0,0)[m[K,-Pc.at(2,0),PC.at(1,0));
+[4.545s]       |                                                    [01;36m[K~~~~~^~~~~[m[K
+[4.546s] [01m[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:69:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcv::Mat::at(int, int)[m[K’
+[4.546s]   250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0,0),-[01;31m[KPc.at(2,0)[m[K,PC.at(1,0));
+[4.546s]       |                                                                [01;31m[K~~~~~^~~~~[m[K
+[4.546s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:938:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> _Tp& cv::Mat::[01;32m[Kat[m[K(int)[m[K’
+[4.546s]   938 | _Tp& [01;36m[KMat[m[K::at(int i0)
+[4.547s]       |      [01;36m[K^~~[m[K
+[4.547s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:938:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.547s] [01m[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:69:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[4.547s]   250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0,0),-[01;36m[KPc.at(2,0)[m[K,PC.at(1,0));
+[4.547s]       |                                                                [01;36m[K~~~~~^~~~~[m[K
+[4.549s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1934:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const _Tp& cv::Mat::[01;32m[Kat[m[K(int) const[m[K’
+[4.549s]  1934 |     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(int i0=0) const;
+[4.550s]       |                                       [01;36m[K^~[m[K
+[4.550s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1934:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.550s] [01m[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:69:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[4.550s]   250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0,0),-[01;36m[KPc.at(2,0)[m[K,PC.at(1,0));
+[4.550s]       |                                                                [01;36m[K~~~~~^~~~~[m[K
+[4.551s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:894:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> _Tp& cv::Mat::[01;32m[Kat[m[K(int, int)[m[K’
+[4.551s]   894 | _Tp& [01;36m[KMat[m[K::at(int i0, int i1)
+[4.551s]       |      [01;36m[K^~~[m[K
+[4.551s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:894:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.552s] [01m[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:69:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_Tp[m[K’
+[4.552s]   250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0,0),-[01;36m[KPc.at(2,0)[m[K,PC.at(1,0));
+[4.552s]       |                                                                [01;36m[K~~~~~^~~~~[m[K
+[4.552s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1944:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const _Tp& cv::Mat::[01;32m[Kat[m[K(int, int) const[m[K’
+[4.552s]  1944 |     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(int row, int col) const;
+[4.553s]       |                                       [01;36m[K^~[m[K
+[4.553s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1944:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.553s] [01m[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:69:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_Tp[m[K’
+[4.553s]   250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0,0),-[01;36m[KPc.at(2,0)[m[K,PC.at(1,0));
+[4.553s]       |                                                                [01;36m[K~~~~~^~~~~[m[K
+[4.554s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1951:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> _Tp& cv::Mat::[01;32m[Kat[m[K(int, int, int)[m[K’
+[4.554s]  1951 |     template<typename _Tp> _Tp& [01;36m[Kat[m[K(int i0, int i1, int i2);
+[4.554s]       |                                 [01;36m[K^~[m[K
+[4.554s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1951:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.554s] [01m[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:69:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+[4.554s]   250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0,0),-[01;36m[KPc.at(2,0)[m[K,PC.at(1,0));
+[4.554s]       |                                                                [01;36m[K~~~~~^~~~~[m[K
+[4.555s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1957:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const _Tp& cv::Mat::[01;32m[Kat[m[K(int, int, int) const[m[K’
+[4.555s]  1957 |     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(int i0, int i1, int i2) const;
+[4.555s]       |                                       [01;36m[K^~[m[K
+[4.555s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1957:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.555s] [01m[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:69:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+[4.555s]   250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0,0),-[01;36m[KPc.at(2,0)[m[K,PC.at(1,0));
+[4.555s]       |                                                                [01;36m[K~~~~~^~~~~[m[K
+[4.555s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1962:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> _Tp& cv::Mat::[01;32m[Kat[m[K(const int*)[m[K’
+[4.556s]  1962 |     template<typename _Tp> _Tp& [01;36m[Kat[m[K(const int* idx);
+[4.556s]       |                                 [01;36m[K^~[m[K
+[4.556s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1962:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.556s] [01m[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:69:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[4.556s]   250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0,0),-[01;36m[KPc.at(2,0)[m[K,PC.at(1,0));
+[4.556s]       |                                                                [01;36m[K~~~~~^~~~~[m[K
+[4.556s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1966:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const _Tp& cv::Mat::[01;32m[Kat[m[K(const int*) const[m[K’
+[4.556s]  1966 |     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(const int* idx) const;
+[4.557s]       |                                       [01;36m[K^~[m[K
+[4.557s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1966:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.557s] [01m[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:69:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[4.557s]   250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0,0),-[01;36m[KPc.at(2,0)[m[K,PC.at(1,0));
+[4.557s]       |                                                                [01;36m[K~~~~~^~~~~[m[K
+[4.557s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1969:40:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int n> _Tp& cv::Mat::[01;32m[Kat[m[K(const cv::Vec<int, n>&)[m[K’
+[4.557s]  1969 |     template<typename _Tp, int n> _Tp& [01;36m[Kat[m[K(const Vec<int, n>& idx);
+[4.558s]       |                                        [01;36m[K^~[m[K
+[4.558s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1969:40:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.558s] [01m[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:69:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst cv::Vec<int, n>[m[K’ and ‘[01m[Kint[m[K’
+[4.558s]   250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0,0),-[01;36m[KPc.at(2,0)[m[K,PC.at(1,0));
+[4.558s]       |                                                                [01;36m[K~~~~~^~~~~[m[K
+[4.558s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1971:46:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int n> const _Tp& cv::Mat::[01;32m[Kat[m[K(const cv::Vec<int, n>&) const[m[K’
+[4.558s]  1971 |     template<typename _Tp, int n> const _Tp& [01;36m[Kat[m[K(const Vec<int, n>& idx) const;
+[4.558s]       |                                              [01;36m[K^~[m[K
+[4.559s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1971:46:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.559s] [01m[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:69:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst cv::Vec<int, n>[m[K’ and ‘[01m[Kint[m[K’
+[4.559s]   250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0,0),-[01;36m[KPc.at(2,0)[m[K,PC.at(1,0));
+[4.559s]       |                                                                [01;36m[K~~~~~^~~~~[m[K
+[4.559s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1977:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> _Tp& cv::Mat::[01;32m[Kat[m[K(cv::Point)[m[K’
+[4.559s]  1977 |     template<typename _Tp> _Tp& [01;36m[Kat[m[K(Point pt);
+[4.559s]       |                                 [01;36m[K^~[m[K
+[4.560s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1977:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.560s] [01m[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:69:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[4.560s]   250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0,0),-[01;36m[KPc.at(2,0)[m[K,PC.at(1,0));
+[4.560s]       |                                                                [01;36m[K~~~~~^~~~~[m[K
+[4.560s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1982:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const _Tp& cv::Mat::[01;32m[Kat[m[K(cv::Point) const[m[K’
+[4.560s]  1982 |     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(Point pt) const;
+[4.560s]       |                                       [01;36m[K^~[m[K
+[4.560s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1982:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.561s] [01m[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:69:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[4.561s]   250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0,0),-[01;36m[KPc.at(2,0)[m[K,PC.at(1,0));
+[4.561s]       |                                                                [01;36m[K~~~~~^~~~~[m[K
+[4.561s] [01m[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:75:[m[K [01;31m[Kerror: [m[K‘[01m[KPC[m[K’ was not declared in this scope; did you mean ‘[01m[KPc[m[K’?
+[4.561s]   250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0,0),-Pc.at(2,0),[01;31m[KPC[m[K.at(1,0));
+[4.561s]       |                                                                           [01;31m[K^~[m[K
+[4.561s]       |                                                                           [32m[KPc[m[K
+[6.920s] gmake[2]: *** [CMakeFiles/ball_detector_node.dir/build.make:76: CMakeFiles/ball_detector_node.dir/src/main.cpp.o] エラー 1
+[6.920s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ball_detector_node.dir/all] エラー 2
+[6.920s] gmake: *** [Makefile:146: all] エラー 2
+[6.923s] Invoked command in '/home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector -- -j4 -l4

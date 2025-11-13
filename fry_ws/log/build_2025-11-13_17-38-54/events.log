@@ -1,0 +1,138 @@
+[0.000000] (-) TimerEvent: {}
+[0.000561] (ball_detector) JobQueued: {'identifier': 'ball_detector', 'dependencies': OrderedDict()}
+[0.000956] (ball_detector) JobStarted: {'identifier': 'ball_detector'}
+[0.013867] (ball_detector) JobProgress: {'identifier': 'ball_detector', 'progress': 'cmake'}
+[0.014622] (ball_detector) JobProgress: {'identifier': 'ball_detector', 'progress': 'build'}
+[0.015636] (ball_detector) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector', '--', '-j4', '-l4'], 'cwd': '/home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'crs3', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/crs3', 'CHROME_DESKTOP': 'code.desktop', 'TERM_PROGRAM_VERSION': '1.103.2', 'DESKTOP_SESSION': 'ubuntu-xorg', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '2171', 'SYSTEMD_EXEC_PID': '2612', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'UNZIP': '-O CP932', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3326', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/crs3/camera_ws/camera_ws/fry_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'crs3', 'JOURNAL_STREAM': '8:18049', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'crs3', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/home/crs3/.local/bin:/home/crs3/.cargo/bin:/home/crs3/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/crs3/.config/Code/User/globalStorage/github.copilot-chat/debugCommand', 'SESSION_MANAGER': 'local/crs3-MINI-S:@/tmp/.ICE-unix/2553,unix/crs3-MINI-S:/tmp/.ICE-unix/2553', 'INVOCATION_ID': '4f00e3e1729548daa6a3191b11e9c52f', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'ja_JP.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-40da727508.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector:/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu-xorg', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector', 'ZIPINFO': '-O CP932', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099685] (-) TimerEvent: {}
+[0.103308] (ball_detector) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ball_detector_node.dir/src/main.cpp.o\x1b[0m\n'}
+[0.199805] (-) TimerEvent: {}
+[0.300232] (-) TimerEvent: {}
+[0.401052] (-) TimerEvent: {}
+[0.501446] (-) TimerEvent: {}
+[0.601829] (-) TimerEvent: {}
+[0.702177] (-) TimerEvent: {}
+[0.802627] (-) TimerEvent: {}
+[0.902983] (-) TimerEvent: {}
+[1.003362] (-) TimerEvent: {}
+[1.103748] (-) TimerEvent: {}
+[1.204189] (-) TimerEvent: {}
+[1.304650] (-) TimerEvent: {}
+[1.405043] (-) TimerEvent: {}
+[1.505408] (-) TimerEvent: {}
+[1.605857] (-) TimerEvent: {}
+[1.706556] (-) TimerEvent: {}
+[1.806945] (-) TimerEvent: {}
+[1.907373] (-) TimerEvent: {}
+[2.007773] (-) TimerEvent: {}
+[2.108159] (-) TimerEvent: {}
+[2.208566] (-) TimerEvent: {}
+[2.308914] (-) TimerEvent: {}
+[2.409307] (-) TimerEvent: {}
+[2.509654] (-) TimerEvent: {}
+[2.610058] (-) TimerEvent: {}
+[2.710485] (-) TimerEvent: {}
+[2.813288] (-) TimerEvent: {}
+[2.913690] (-) TimerEvent: {}
+[3.014153] (-) TimerEvent: {}
+[3.114607] (-) TimerEvent: {}
+[3.215061] (-) TimerEvent: {}
+[3.315532] (-) TimerEvent: {}
+[3.415879] (-) TimerEvent: {}
+[3.516302] (-) TimerEvent: {}
+[3.616743] (-) TimerEvent: {}
+[3.717249] (-) TimerEvent: {}
+[3.817685] (-) TimerEvent: {}
+[3.918126] (-) TimerEvent: {}
+[4.018475] (-) TimerEvent: {}
+[4.118867] (-) TimerEvent: {}
+[4.219270] (-) TimerEvent: {}
+[4.319867] (-) TimerEvent: {}
+[4.420298] (-) TimerEvent: {}
+[4.520684] (-) TimerEvent: {}
+[4.621094] (-) TimerEvent: {}
+[4.721689] (-) TimerEvent: {}
+[4.822083] (-) TimerEvent: {}
+[4.922610] (-) TimerEvent: {}
+[5.023084] (-) TimerEvent: {}
+[5.123533] (-) TimerEvent: {}
+[5.223988] (-) TimerEvent: {}
+[5.324455] (-) TimerEvent: {}
+[5.424873] (-) TimerEvent: {}
+[5.525312] (-) TimerEvent: {}
+[5.625690] (-) TimerEvent: {}
+[5.726110] (-) TimerEvent: {}
+[5.826533] (-) TimerEvent: {}
+[5.926951] (-) TimerEvent: {}
+[6.027371] (-) TimerEvent: {}
+[6.127746] (-) TimerEvent: {}
+[6.228149] (-) TimerEvent: {}
+[6.328606] (-) TimerEvent: {}
+[6.428944] (-) TimerEvent: {}
+[6.530552] (-) TimerEvent: {}
+[6.631291] (-) TimerEvent: {}
+[6.732876] (-) TimerEvent: {}
+[6.833617] (-) TimerEvent: {}
+[6.934165] (-) TimerEvent: {}
+[7.034536] (-) TimerEvent: {}
+[7.135098] (-) TimerEvent: {}
+[7.236655] (-) TimerEvent: {}
+[7.337466] (-) TimerEvent: {}
+[7.437877] (-) TimerEvent: {}
+[7.538231] (-) TimerEvent: {}
+[7.638591] (-) TimerEvent: {}
+[7.739057] (-) TimerEvent: {}
+[7.839519] (-) TimerEvent: {}
+[7.939979] (-) TimerEvent: {}
+[8.040515] (-) TimerEvent: {}
+[8.140943] (-) TimerEvent: {}
+[8.241378] (-) TimerEvent: {}
+[8.341809] (-) TimerEvent: {}
+[8.442294] (-) TimerEvent: {}
+[8.542718] (-) TimerEvent: {}
+[8.643096] (-) TimerEvent: {}
+[8.743462] (-) TimerEvent: {}
+[8.843829] (-) TimerEvent: {}
+[8.944214] (-) TimerEvent: {}
+[9.047303] (-) TimerEvent: {}
+[9.147710] (-) TimerEvent: {}
+[9.185434] (ball_detector) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ball_detector_node\x1b[0m\n'}
+[9.247853] (-) TimerEvent: {}
+[9.348304] (-) TimerEvent: {}
+[9.449243] (-) TimerEvent: {}
+[9.549677] (-) TimerEvent: {}
+[9.650086] (-) TimerEvent: {}
+[9.751502] (-) TimerEvent: {}
+[9.852714] (-) TimerEvent: {}
+[9.953866] (-) TimerEvent: {}
+[10.054274] (-) TimerEvent: {}
+[10.154634] (-) TimerEvent: {}
+[10.255084] (-) TimerEvent: {}
+[10.355531] (-) TimerEvent: {}
+[10.436912] (ball_detector) StdoutLine: {'line': b'[100%] Built target ball_detector_node\n'}
+[10.450400] (ball_detector) CommandEnded: {'returncode': 0}
+[10.451182] (ball_detector) JobProgress: {'identifier': 'ball_detector', 'progress': 'install'}
+[10.455640] (-) TimerEvent: {}
+[10.462389] (ball_detector) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector'], 'cwd': '/home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'crs3', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/crs3', 'CHROME_DESKTOP': 'code.desktop', 'TERM_PROGRAM_VERSION': '1.103.2', 'DESKTOP_SESSION': 'ubuntu-xorg', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '2171', 'SYSTEMD_EXEC_PID': '2612', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'UNZIP': '-O CP932', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3326', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/crs3/camera_ws/camera_ws/fry_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'crs3', 'JOURNAL_STREAM': '8:18049', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'crs3', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/home/crs3/.local/bin:/home/crs3/.cargo/bin:/home/crs3/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/crs3/.config/Code/User/globalStorage/github.copilot-chat/debugCommand', 'SESSION_MANAGER': 'local/crs3-MINI-S:@/tmp/.ICE-unix/2553,unix/crs3-MINI-S:/tmp/.ICE-unix/2553', 'INVOCATION_ID': '4f00e3e1729548daa6a3191b11e9c52f', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'ja_JP.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-40da727508.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector:/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu-xorg', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector', 'ZIPINFO': '-O CP932', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[10.476580] (ball_detector) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.477245] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/camera_calib.yml\n'}
+[10.477435] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/lib/ball_detector/ball_detector_node\n'}
+[10.479243] (ball_detector) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/lib/ball_detector/ball_detector_node" to ""\n'}
+[10.479479] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ament_index/resource_index/package_run_dependencies/ball_detector\n'}
+[10.479658] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ament_index/resource_index/parent_prefix_path/ball_detector\n'}
+[10.479885] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/environment/ament_prefix_path.sh\n'}
+[10.480026] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/environment/ament_prefix_path.dsv\n'}
+[10.480146] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/environment/path.sh\n'}
+[10.480286] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/environment/path.dsv\n'}
+[10.480427] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/local_setup.bash\n'}
+[10.480558] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/local_setup.sh\n'}
+[10.480693] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/local_setup.zsh\n'}
+[10.480824] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/local_setup.dsv\n'}
+[10.480963] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/package.dsv\n'}
+[10.481211] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ament_index/resource_index/packages/ball_detector\n'}
+[10.481384] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/cmake/ball_detectorConfig.cmake\n'}
+[10.481510] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/cmake/ball_detectorConfig-version.cmake\n'}
+[10.481712] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/package.xml\n'}
+[10.482466] (ball_detector) CommandEnded: {'returncode': 0}
+[10.509440] (ball_detector) JobEnded: {'identifier': 'ball_detector', 'rc': 0}
+[10.510545] (-) EventReactorShutdown: {}

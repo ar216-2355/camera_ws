@@ -1,0 +1,348 @@
+[0.000000] (-) TimerEvent: {}
+[0.000358] (ball_detector) JobQueued: {'identifier': 'ball_detector', 'dependencies': OrderedDict()}
+[0.000661] (ball_detector) JobStarted: {'identifier': 'ball_detector'}
+[0.012834] (ball_detector) JobProgress: {'identifier': 'ball_detector', 'progress': 'cmake'}
+[0.013795] (ball_detector) JobProgress: {'identifier': 'ball_detector', 'progress': 'build'}
+[0.014784] (ball_detector) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector', '--', '-j4', '-l4'], 'cwd': '/home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'crs3', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/crs3', 'CHROME_DESKTOP': 'code.desktop', 'TERM_PROGRAM_VERSION': '1.103.2', 'DESKTOP_SESSION': 'ubuntu-xorg', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '2171', 'SYSTEMD_EXEC_PID': '2612', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'UNZIP': '-O CP932', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3326', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/crs3/camera_ws/camera_ws/fry_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'crs3', 'JOURNAL_STREAM': '8:18049', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'crs3', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/home/crs3/.local/bin:/home/crs3/.cargo/bin:/home/crs3/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/crs3/.config/Code/User/globalStorage/github.copilot-chat/debugCommand', 'SESSION_MANAGER': 'local/crs3-MINI-S:@/tmp/.ICE-unix/2553,unix/crs3-MINI-S:/tmp/.ICE-unix/2553', 'INVOCATION_ID': '4f00e3e1729548daa6a3191b11e9c52f', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'ja_JP.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-40da727508.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector:/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu-xorg', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector', 'ZIPINFO': '-O CP932', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099718] (-) TimerEvent: {}
+[0.102598] (ball_detector) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ball_detector_node.dir/src/main.cpp.o\x1b[0m\n'}
+[0.199874] (-) TimerEvent: {}
+[0.300265] (-) TimerEvent: {}
+[0.400685] (-) TimerEvent: {}
+[0.501096] (-) TimerEvent: {}
+[0.601561] (-) TimerEvent: {}
+[0.702112] (-) TimerEvent: {}
+[0.802540] (-) TimerEvent: {}
+[0.902907] (-) TimerEvent: {}
+[1.003445] (-) TimerEvent: {}
+[1.103928] (-) TimerEvent: {}
+[1.204408] (-) TimerEvent: {}
+[1.304881] (-) TimerEvent: {}
+[1.405388] (-) TimerEvent: {}
+[1.505757] (-) TimerEvent: {}
+[1.606290] (-) TimerEvent: {}
+[1.706720] (-) TimerEvent: {}
+[1.807184] (-) TimerEvent: {}
+[1.907545] (-) TimerEvent: {}
+[2.007943] (-) TimerEvent: {}
+[2.108354] (-) TimerEvent: {}
+[2.208772] (-) TimerEvent: {}
+[2.309153] (-) TimerEvent: {}
+[2.409621] (-) TimerEvent: {}
+[2.510250] (-) TimerEvent: {}
+[2.610642] (-) TimerEvent: {}
+[2.711139] (-) TimerEvent: {}
+[2.811766] (-) TimerEvent: {}
+[2.912159] (-) TimerEvent: {}
+[3.012628] (-) TimerEvent: {}
+[3.113048] (-) TimerEvent: {}
+[3.213475] (-) TimerEvent: {}
+[3.313907] (-) TimerEvent: {}
+[3.416369] (-) TimerEvent: {}
+[3.516803] (-) TimerEvent: {}
+[3.617197] (-) TimerEvent: {}
+[3.717595] (-) TimerEvent: {}
+[3.817998] (-) TimerEvent: {}
+[3.918390] (-) TimerEvent: {}
+[4.018841] (-) TimerEvent: {}
+[4.119261] (-) TimerEvent: {}
+[4.219762] (-) TimerEvent: {}
+[4.320182] (-) TimerEvent: {}
+[4.420586] (-) TimerEvent: {}
+[4.520976] (-) TimerEvent: {}
+[4.555712] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[01;32m\x1b[K main\x1b[m\x1b[K(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.556131] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat::at(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.556313] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << \x1b[01;31m\x1b[KPc.at(0)\x1b[m\x1b[K,-Pc.at(2),Pc.at(1));\n'}
+[4.556451] (ball_detector) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.556562] (ball_detector) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3773\x1b[m\x1b[K,\n'}
+[4.556671] (ball_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[4.556779] (ball_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.556889] (ball_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:4\x1b[m\x1b[K:\n'}
+[4.556993] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:938:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.557104] (ball_detector) StderrLine: {'line': b'  938 | _Tp& \x1b[01;36m\x1b[KMat\x1b[m\x1b[K::at(int i0)\n'}
+[4.557219] (ball_detector) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[4.557335] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:938:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.557445] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Tp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.557550] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << \x1b[01;36m\x1b[KPc.at(0)\x1b[m\x1b[K,-Pc.at(2),Pc.at(1));\n'}
+[4.557657] (ball_detector) StderrLine: {'line': b'      |                                                    \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.558666] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1934:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(int) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.559959] (ball_detector) StderrLine: {'line': b' 1934 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int i0=0) const;\n'}
+[4.560165] (ball_detector) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.560390] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1934:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.560592] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Tp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.560764] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << \x1b[01;36m\x1b[KPc.at(0)\x1b[m\x1b[K,-Pc.at(2),Pc.at(1));\n'}
+[4.560917] (ball_detector) StderrLine: {'line': b'      |                                                    \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.561069] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:894:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.561228] (ball_detector) StderrLine: {'line': b'  894 | _Tp& \x1b[01;36m\x1b[KMat\x1b[m\x1b[K::at(int i0, int i1)\n'}
+[4.561444] (ball_detector) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[4.561621] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:894:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.561782] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[4.561955] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << \x1b[01;36m\x1b[KPc.at(0)\x1b[m\x1b[K,-Pc.at(2),Pc.at(1));\n'}
+[4.562110] (ball_detector) StderrLine: {'line': b'      |                                                    \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.562257] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1944:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(int, int) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.563716] (ball_detector) StderrLine: {'line': b' 1944 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int row, int col) const;\n'}
+[4.563887] (ball_detector) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.564003] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1944:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.564123] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[4.564242] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << \x1b[01;36m\x1b[KPc.at(0)\x1b[m\x1b[K,-Pc.at(2),Pc.at(1));\n'}
+[4.564409] (ball_detector) StderrLine: {'line': b'      |                                                    \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.564553] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1951:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(int, int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.564686] (ball_detector) StderrLine: {'line': b' 1951 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int i0, int i1, int i2);\n'}
+[4.564812] (ball_detector) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.564934] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1951:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.565055] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 1 provided\n'}
+[4.565181] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << \x1b[01;36m\x1b[KPc.at(0)\x1b[m\x1b[K,-Pc.at(2),Pc.at(1));\n'}
+[4.565402] (ball_detector) StderrLine: {'line': b'      |                                                    \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.565531] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1957:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(int, int, int) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.565654] (ball_detector) StderrLine: {'line': b' 1957 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int i0, int i1, int i2) const;\n'}
+[4.565768] (ball_detector) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.565898] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1957:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.566008] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 1 provided\n'}
+[4.566126] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << \x1b[01;36m\x1b[KPc.at(0)\x1b[m\x1b[K,-Pc.at(2),Pc.at(1));\n'}
+[4.566249] (ball_detector) StderrLine: {'line': b'      |                                                    \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.566417] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1962:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(const int*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.566562] (ball_detector) StderrLine: {'line': b' 1962 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const int* idx);\n'}
+[4.566702] (ball_detector) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.566831] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1962:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.566963] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Tp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.567098] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << \x1b[01;36m\x1b[KPc.at(0)\x1b[m\x1b[K,-Pc.at(2),Pc.at(1));\n'}
+[4.567222] (ball_detector) StderrLine: {'line': b'      |                                                    \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.567370] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1966:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(const int*) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.567498] (ball_detector) StderrLine: {'line': b' 1966 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const int* idx) const;\n'}
+[4.567619] (ball_detector) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.567738] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1966:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.567858] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Tp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.567992] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << \x1b[01;36m\x1b[KPc.at(0)\x1b[m\x1b[K,-Pc.at(2),Pc.at(1));\n'}
+[4.568122] (ball_detector) StderrLine: {'line': b'      |                                                    \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.568254] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1969:40:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int n> _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(const cv::Vec<int, n>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.568415] (ball_detector) StderrLine: {'line': b' 1969 |     template<typename _Tp, int n> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const Vec<int, n>& idx);\n'}
+[4.568550] (ball_detector) StderrLine: {'line': b'      |                                        \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.568666] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1969:40:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.568781] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Vec<int, n>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.568905] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << \x1b[01;36m\x1b[KPc.at(0)\x1b[m\x1b[K,-Pc.at(2),Pc.at(1));\n'}
+[4.569031] (ball_detector) StderrLine: {'line': b'      |                                                    \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.569148] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1971:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int n> const _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(const cv::Vec<int, n>&) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.569274] (ball_detector) StderrLine: {'line': b' 1971 |     template<typename _Tp, int n> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const Vec<int, n>& idx) const;\n'}
+[4.569433] (ball_detector) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.569562] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1971:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.569692] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Vec<int, n>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.569824] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << \x1b[01;36m\x1b[KPc.at(0)\x1b[m\x1b[K,-Pc.at(2),Pc.at(1));\n'}
+[4.569948] (ball_detector) StderrLine: {'line': b'      |                                                    \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.570073] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1977:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(cv::Point)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.570197] (ball_detector) StderrLine: {'line': b' 1977 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(Point pt);\n'}
+[4.570347] (ball_detector) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.570496] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1977:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.570608] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Tp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.570727] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << \x1b[01;36m\x1b[KPc.at(0)\x1b[m\x1b[K,-Pc.at(2),Pc.at(1));\n'}
+[4.570845] (ball_detector) StderrLine: {'line': b'      |                                                    \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.570961] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1982:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(cv::Point) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.571093] (ball_detector) StderrLine: {'line': b' 1982 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(Point pt) const;\n'}
+[4.571214] (ball_detector) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.571363] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1982:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.571501] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Tp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.571621] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << \x1b[01;36m\x1b[KPc.at(0)\x1b[m\x1b[K,-Pc.at(2),Pc.at(1));\n'}
+[4.571733] (ball_detector) StderrLine: {'line': b'      |                                                    \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.571848] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat::at(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.571969] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0),-\x1b[01;31m\x1b[KPc.at(2)\x1b[m\x1b[K,Pc.at(1));\n'}
+[4.572078] (ball_detector) StderrLine: {'line': b'      |                                                              \x1b[01;31m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.572189] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:938:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.572308] (ball_detector) StderrLine: {'line': b'  938 | _Tp& \x1b[01;36m\x1b[KMat\x1b[m\x1b[K::at(int i0)\n'}
+[4.572442] (ball_detector) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[4.572550] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:938:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.572666] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:67:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Tp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.572775] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0),-\x1b[01;36m\x1b[KPc.at(2)\x1b[m\x1b[K,Pc.at(1));\n'}
+[4.572892] (ball_detector) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.573298] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1934:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(int) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.573450] (ball_detector) StderrLine: {'line': b' 1934 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int i0=0) const;\n'}
+[4.573557] (ball_detector) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.573663] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1934:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.573777] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:67:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Tp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.573884] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0),-\x1b[01;36m\x1b[KPc.at(2)\x1b[m\x1b[K,Pc.at(1));\n'}
+[4.574009] (ball_detector) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.574120] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:894:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.574240] (ball_detector) StderrLine: {'line': b'  894 | _Tp& \x1b[01;36m\x1b[KMat\x1b[m\x1b[K::at(int i0, int i1)\n'}
+[4.574426] (ball_detector) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[4.574588] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:894:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.574723] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:67:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[4.574853] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0),-\x1b[01;36m\x1b[KPc.at(2)\x1b[m\x1b[K,Pc.at(1));\n'}
+[4.574979] (ball_detector) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.575103] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1944:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(int, int) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.575227] (ball_detector) StderrLine: {'line': b' 1944 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int row, int col) const;\n'}
+[4.575388] (ball_detector) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.575520] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1944:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.575643] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:67:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[4.575762] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0),-\x1b[01;36m\x1b[KPc.at(2)\x1b[m\x1b[K,Pc.at(1));\n'}
+[4.575884] (ball_detector) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.575998] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1951:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(int, int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.576112] (ball_detector) StderrLine: {'line': b' 1951 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int i0, int i1, int i2);\n'}
+[4.576221] (ball_detector) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.576380] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1951:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.576533] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:67:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 1 provided\n'}
+[4.576660] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0),-\x1b[01;36m\x1b[KPc.at(2)\x1b[m\x1b[K,Pc.at(1));\n'}
+[4.576788] (ball_detector) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.576919] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1957:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(int, int, int) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.577048] (ball_detector) StderrLine: {'line': b' 1957 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int i0, int i1, int i2) const;\n'}
+[4.577163] (ball_detector) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.577276] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1957:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.577437] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:67:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 1 provided\n'}
+[4.577574] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0),-\x1b[01;36m\x1b[KPc.at(2)\x1b[m\x1b[K,Pc.at(1));\n'}
+[4.577707] (ball_detector) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.577837] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1962:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(const int*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.577986] (ball_detector) StderrLine: {'line': b' 1962 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const int* idx);\n'}
+[4.578113] (ball_detector) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.578236] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1962:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.578697] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:67:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Tp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.578825] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0),-\x1b[01;36m\x1b[KPc.at(2)\x1b[m\x1b[K,Pc.at(1));\n'}
+[4.578938] (ball_detector) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.579052] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1966:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(const int*) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.579165] (ball_detector) StderrLine: {'line': b' 1966 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const int* idx) const;\n'}
+[4.579276] (ball_detector) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.579472] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1966:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.579612] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:67:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Tp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.579743] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0),-\x1b[01;36m\x1b[KPc.at(2)\x1b[m\x1b[K,Pc.at(1));\n'}
+[4.579858] (ball_detector) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.579977] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1969:40:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int n> _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(const cv::Vec<int, n>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.580094] (ball_detector) StderrLine: {'line': b' 1969 |     template<typename _Tp, int n> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const Vec<int, n>& idx);\n'}
+[4.580222] (ball_detector) StderrLine: {'line': b'      |                                        \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.580375] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1969:40:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.580551] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:67:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Vec<int, n>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.580742] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0),-\x1b[01;36m\x1b[KPc.at(2)\x1b[m\x1b[K,Pc.at(1));\n'}
+[4.580902] (ball_detector) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.581049] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1971:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int n> const _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(const cv::Vec<int, n>&) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.581173] (ball_detector) StderrLine: {'line': b' 1971 |     template<typename _Tp, int n> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const Vec<int, n>& idx) const;\n'}
+[4.581305] (ball_detector) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.581445] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1971:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.581564] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:67:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Vec<int, n>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.581684] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0),-\x1b[01;36m\x1b[KPc.at(2)\x1b[m\x1b[K,Pc.at(1));\n'}
+[4.581805] (ball_detector) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.581922] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1977:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(cv::Point)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.582055] (ball_detector) StderrLine: {'line': b' 1977 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(Point pt);\n'}
+[4.582170] (ball_detector) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.582292] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1977:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.582421] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:67:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Tp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.582553] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0),-\x1b[01;36m\x1b[KPc.at(2)\x1b[m\x1b[K,Pc.at(1));\n'}
+[4.582676] (ball_detector) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.582794] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1982:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(cv::Point) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.582916] (ball_detector) StderrLine: {'line': b' 1982 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(Point pt) const;\n'}
+[4.583030] (ball_detector) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.583148] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1982:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.583261] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:67:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Tp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.583404] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0),-\x1b[01;36m\x1b[KPc.at(2)\x1b[m\x1b[K,Pc.at(1));\n'}
+[4.583526] (ball_detector) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.583641] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:76:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat::at(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.583784] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0),-Pc.at(2),\x1b[01;31m\x1b[KPc.at(1)\x1b[m\x1b[K);\n'}
+[4.583929] (ball_detector) StderrLine: {'line': b'      |                                                                       \x1b[01;31m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.584048] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:938:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.584168] (ball_detector) StderrLine: {'line': b'  938 | _Tp& \x1b[01;36m\x1b[KMat\x1b[m\x1b[K::at(int i0)\n'}
+[4.584297] (ball_detector) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[4.584425] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:938:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.584548] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:76:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Tp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.584678] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0),-Pc.at(2),\x1b[01;36m\x1b[KPc.at(1)\x1b[m\x1b[K);\n'}
+[4.584801] (ball_detector) StderrLine: {'line': b'      |                                                                       \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.584940] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1934:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(int) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.585080] (ball_detector) StderrLine: {'line': b' 1934 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int i0=0) const;\n'}
+[4.585203] (ball_detector) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.585330] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1934:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.585451] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:76:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Tp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.585563] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0),-Pc.at(2),\x1b[01;36m\x1b[KPc.at(1)\x1b[m\x1b[K);\n'}
+[4.585673] (ball_detector) StderrLine: {'line': b'      |                                                                       \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.585785] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:894:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.585918] (ball_detector) StderrLine: {'line': b'  894 | _Tp& \x1b[01;36m\x1b[KMat\x1b[m\x1b[K::at(int i0, int i1)\n'}
+[4.586042] (ball_detector) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[4.586164] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:894:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.587001] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:76:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[4.587130] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0),-Pc.at(2),\x1b[01;36m\x1b[KPc.at(1)\x1b[m\x1b[K);\n'}
+[4.587241] (ball_detector) StderrLine: {'line': b'      |                                                                       \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.587371] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1944:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(int, int) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.587511] (ball_detector) StderrLine: {'line': b' 1944 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int row, int col) const;\n'}
+[4.587630] (ball_detector) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.587743] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1944:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.587864] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:76:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[4.587981] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0),-Pc.at(2),\x1b[01;36m\x1b[KPc.at(1)\x1b[m\x1b[K);\n'}
+[4.588095] (ball_detector) StderrLine: {'line': b'      |                                                                       \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.588203] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1951:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(int, int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.588339] (ball_detector) StderrLine: {'line': b' 1951 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int i0, int i1, int i2);\n'}
+[4.588469] (ball_detector) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.588584] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1951:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.588700] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:76:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 1 provided\n'}
+[4.588816] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0),-Pc.at(2),\x1b[01;36m\x1b[KPc.at(1)\x1b[m\x1b[K);\n'}
+[4.588931] (ball_detector) StderrLine: {'line': b'      |                                                                       \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.589045] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1957:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(int, int, int) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.589163] (ball_detector) StderrLine: {'line': b' 1957 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int i0, int i1, int i2) const;\n'}
+[4.589292] (ball_detector) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.589498] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1957:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.589673] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:76:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 1 provided\n'}
+[4.589820] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0),-Pc.at(2),\x1b[01;36m\x1b[KPc.at(1)\x1b[m\x1b[K);\n'}
+[4.589965] (ball_detector) StderrLine: {'line': b'      |                                                                       \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.590106] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1962:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(const int*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.590242] (ball_detector) StderrLine: {'line': b' 1962 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const int* idx);\n'}
+[4.590439] (ball_detector) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.590590] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1962:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.590763] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:76:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Tp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.590923] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0),-Pc.at(2),\x1b[01;36m\x1b[KPc.at(1)\x1b[m\x1b[K);\n'}
+[4.591066] (ball_detector) StderrLine: {'line': b'      |                                                                       \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.591205] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1966:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(const int*) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.591387] (ball_detector) StderrLine: {'line': b' 1966 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const int* idx) const;\n'}
+[4.591533] (ball_detector) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.591670] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1966:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.591819] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:76:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Tp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.591968] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0),-Pc.at(2),\x1b[01;36m\x1b[KPc.at(1)\x1b[m\x1b[K);\n'}
+[4.592100] (ball_detector) StderrLine: {'line': b'      |                                                                       \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.592254] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1969:40:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int n> _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(const cv::Vec<int, n>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.592476] (ball_detector) StderrLine: {'line': b' 1969 |     template<typename _Tp, int n> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const Vec<int, n>& idx);\n'}
+[4.592622] (ball_detector) StderrLine: {'line': b'      |                                        \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.592757] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1969:40:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.592897] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:76:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Vec<int, n>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.593045] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0),-Pc.at(2),\x1b[01;36m\x1b[KPc.at(1)\x1b[m\x1b[K);\n'}
+[4.593199] (ball_detector) StderrLine: {'line': b'      |                                                                       \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.593378] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1971:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int n> const _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(const cv::Vec<int, n>&) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.593536] (ball_detector) StderrLine: {'line': b' 1971 |     template<typename _Tp, int n> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const Vec<int, n>& idx) const;\n'}
+[4.593696] (ball_detector) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.593833] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1971:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.593968] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:76:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Vec<int, n>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.594123] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0),-Pc.at(2),\x1b[01;36m\x1b[KPc.at(1)\x1b[m\x1b[K);\n'}
+[4.594264] (ball_detector) StderrLine: {'line': b'      |                                                                       \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.594436] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1977:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(cv::Point)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.594581] (ball_detector) StderrLine: {'line': b' 1977 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(Point pt);\n'}
+[4.594718] (ball_detector) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.594857] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1977:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.594995] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:76:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Tp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.595132] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0),-Pc.at(2),\x1b[01;36m\x1b[KPc.at(1)\x1b[m\x1b[K);\n'}
+[4.595270] (ball_detector) StderrLine: {'line': b'      |                                                                       \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.595449] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1982:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(cv::Point) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.595574] (ball_detector) StderrLine: {'line': b' 1982 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(Point pt) const;\n'}
+[4.595691] (ball_detector) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.595807] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1982:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.595931] (ball_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:250:76:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Tp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.596051] (ball_detector) StderrLine: {'line': b'  250 |             cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc.at(0),-Pc.at(2),\x1b[01;36m\x1b[KPc.at(1)\x1b[m\x1b[K);\n'}
+[4.596168] (ball_detector) StderrLine: {'line': b'      |                                                                       \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[4.622432] (-) TimerEvent: {}
+[4.722810] (-) TimerEvent: {}
+[4.823186] (-) TimerEvent: {}
+[4.923645] (-) TimerEvent: {}
+[5.024014] (-) TimerEvent: {}
+[5.124587] (-) TimerEvent: {}
+[5.225027] (-) TimerEvent: {}
+[5.325389] (-) TimerEvent: {}
+[5.425785] (-) TimerEvent: {}
+[5.526184] (-) TimerEvent: {}
+[5.626607] (-) TimerEvent: {}
+[5.727024] (-) TimerEvent: {}
+[5.827501] (-) TimerEvent: {}
+[5.927827] (-) TimerEvent: {}
+[6.028207] (-) TimerEvent: {}
+[6.128600] (-) TimerEvent: {}
+[6.229035] (-) TimerEvent: {}
+[6.329449] (-) TimerEvent: {}
+[6.429863] (-) TimerEvent: {}
+[6.530210] (-) TimerEvent: {}
+[6.630611] (-) TimerEvent: {}
+[6.731084] (-) TimerEvent: {}
+[6.831479] (-) TimerEvent: {}
+[6.923181] (ball_detector) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ball_detector_node.dir/build.make:76: CMakeFiles/ball_detector_node.dir/src/main.cpp.o] \xe3\x82\xa8\xe3\x83\xa9\xe3\x83\xbc 1\n'}
+[6.923523] (ball_detector) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ball_detector_node.dir/all] \xe3\x82\xa8\xe3\x83\xa9\xe3\x83\xbc 2\n'}
+[6.923716] (ball_detector) StderrLine: {'line': b'gmake: *** [Makefile:146: all] \xe3\x82\xa8\xe3\x83\xa9\xe3\x83\xbc 2\n'}
+[6.926146] (ball_detector) CommandEnded: {'returncode': 2}
+[6.931573] (-) TimerEvent: {}
+[6.946248] (ball_detector) JobEnded: {'identifier': 'ball_detector', 'rc': 2}
+[6.960208] (-) EventReactorShutdown: {}

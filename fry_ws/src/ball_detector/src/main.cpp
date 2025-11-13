@@ -213,16 +213,16 @@ cv::imshow("mask", mask);
 
             // --- PnP幾何モデルでカメラ座標系3D位置を算出 ---
             double Z_cam = (fy * ball_radius_m) / radius_px;
-            double X_cam = (center.x - cx) * Z_cam / fx;
-            double Y_cam = (center.y - cy) * Z_cam / fy;
+            double X_cam = -(center.x - cx) * Z_cam / fx;
+            double Y_cam = -(center.y - cy) * Z_cam / fy;
 
             // --- カメラ→ロボット座標変換 ---
             // カメラ位置・姿勢（仮定：後で変更可能）
             double cam_tx = 0.1;   // [m] ロボット中心から前方10cm
             double cam_ty = 0.0;   // [m] 左右オフセット0
             double cam_tz = 0.4;   // [m] カメラ高さ40cm
-            double cam_roll = 0.0;
-            double cam_pitch = -20.0 * M_PI / 180.0; // 下向き20度
+            double cam_roll = 20.0 * M_PI / 180.0; // 下向き20度
+            double cam_pitch = 0.0;
             double cam_yaw = 0.0;
 
             // --- 回転行列生成 ---
@@ -246,7 +246,9 @@ cv::imshow("mask", mask);
             cv::Mat Pc = (cv::Mat_<double>(3,1) << X_cam, Y_cam, Z_cam);
 
             // --- ロボット座標系へ変換 ---
-            cv::Mat Pr = R * Pc + T;
+            cv::Mat Pc_ = R * Pc ;
+            cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc_.at<double>(0),-Pc_.at<double>(2),Pc_.at<double>(1));
+            Pr = Pr + T;
             double X_robot = Pr.at<double>(0);
             double Y_robot = Pr.at<double>(1);
             double Z_robot = Pr.at<double>(2);
