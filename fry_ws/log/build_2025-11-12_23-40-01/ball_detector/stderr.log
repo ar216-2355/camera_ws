@@ -1,0 +1,7 @@
+[01m[K/home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[01m[K/home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:74:5:[m[K [01;31m[Kerror: [m[Kreturn-statement with no value, in function returning ‘[01m[Kint[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   74 |     [01;31m[Kreturn[m[K;
+      |     [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ball_detector_node.dir/build.make:76: CMakeFiles/ball_detector_node.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ball_detector_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

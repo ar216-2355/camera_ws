@@ -38,7 +38,11 @@ int main(int argc, char** argv) {
     RCLCPP_INFO(logger_, "Publisher created.");
 
     // === カメラパラメータ読み込み ===
-    cv::FileStorage fs("/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/camera_calib.yml", cv::FileStorage::READ);
+
+    // cv::FileStorage fs("/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/camera_calib.yml", cv::FileStorage::READ);//仕事PC
+
+    cv::FileStorage fs("/home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/src/ball_detector/camera_calib.yml", cv::FileStorage::READ);//自宅PC
+
     // std::string pkg_share_dir = ament_index_cpp::get_package_share_directory("ball_detector");
     // std::string calib_path = pkg_share_dir + "/camera_calib.yml";
 
@@ -54,18 +58,24 @@ int main(int argc, char** argv) {
     cameraMatrix.convertTo(cameraMatrix, CV_64F);
     distCoeffs.convertTo(distCoeffs, CV_64F);
 
-    // std::cout << "cameraMatrix size: " << cameraMatrix.size() << std::endl;
     RCLCPP_INFO(logger_, "cameraMatrix size: %dx%d", cameraMatrix.rows, cameraMatrix.cols);
 
     double fx = cameraMatrix.at<double>(0, 0);
     double fy = cameraMatrix.at<double>(1, 1);
     double cx = cameraMatrix.at<double>(0, 2);
     double cy = cameraMatrix.at<double>(1, 2);
-    // std::cout << "Camera fx=" << fx << ", fy=" << fy << std::endl;
     RCLCPP_INFO(logger_, "Camera fx=%.2f, fy=%.2f", fx, fy);
 
     // === カメラ設定 ===
-    cv::VideoCapture cap(0);
+
+    // cv::VideoCapture cap("/dev/video0", cv::CAP_V4L2);//仕事PC
+
+    cv::VideoCapture cap("http://192.168.1.9:8080/video");//自宅PC
+
+    if (!cap.isOpened()) {
+        RCLCPP_ERROR(logger_, "Failed to open video stream!");
+        return 0;
+    }   
     cap.set(cv::CAP_PROP_FRAME_WIDTH, 640);
     cap.set(cv::CAP_PROP_FRAME_HEIGHT, 480);
     cap.set(cv::CAP_PROP_FPS, 30);
@@ -113,8 +123,8 @@ int main(int argc, char** argv) {
 static bool trackbar_initialized = false;
 static int h_low_r = 0, h_high_r = 10, s_low_r = 80, s_high_r = 255, v_low_r = 80, v_high_r = 255;
 static int h_low_r2 = 160, h_high_r2 = 179; // 赤の2つ目領域
-static int h_low_b = 100, h_high_b = 130, s_low_b = 80, s_high_b = 255, v_low_b = 80, v_high_b = 255;
-static int h_low_y = 20, h_high_y = 40, s_low_y = 80, s_high_y = 255, v_low_y = 80, v_high_y = 255;
+static int h_low_b = 85, h_high_b = 145, s_low_b = 80, s_high_b = 255, v_low_b = 80, v_high_b = 255;
+static int h_low_y = 10, h_high_y = 40, s_low_y = 80, s_high_y = 255, v_low_y = 80, v_high_y = 255;
 
 if (!trackbar_initialized) {
     cv::namedWindow("mask", cv::WINDOW_NORMAL);
@@ -196,8 +206,9 @@ cv::imshow("mask", mask);
 
             std::string color;
             if ((hue < 10) || (hue > 160)) color = "Red";
-            else if (hue < 35) color = "Yellow";
-            else if (hue < 130) color = "Blue";
+            else if (hue < 40)  color = "Yellow";
+            else if (hue < 145 && hue > 85)
+             color = "Blue";
             else continue;  // 他の色は無視
 
             // === ホモグラフィによる座標変換 ===

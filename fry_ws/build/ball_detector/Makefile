@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector
+CMAKE_SOURCE_DIR = /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/src/ball_detector
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector
+CMAKE_BINARY_DIR = /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/build/ball_detector
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector/CMakeFiles /home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/build/ball_detector/CMakeFiles /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/build/ball_detector//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/build/ball_detector/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

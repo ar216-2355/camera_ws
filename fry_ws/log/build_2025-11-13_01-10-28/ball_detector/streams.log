@@ -1,0 +1,26 @@
+[0.007s] Invoking command in '/home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/build/ball_detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/build/ball_detector -- -j16 -l16
+[0.054s] [ 50%] [32mBuilding CXX object CMakeFiles/ball_detector_node.dir/src/main.cpp.o[0m
+[3.985s] [100%] [32m[1mLinking CXX executable ball_detector_node[0m
+[4.522s] [100%] Built target ball_detector_node
+[4.531s] Invoked command in '/home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/build/ball_detector' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/build/ball_detector -- -j16 -l16
+[4.538s] Invoking command in '/home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/build/ball_detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/build/ball_detector
+[4.545s] -- Install configuration: ""
+[4.545s] -- Up-to-date: /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/camera_calib.yml
+[4.545s] -- Installing: /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/install/ball_detector/lib/ball_detector/ball_detector_node
+[4.546s] -- Set non-toolchain portion of runtime path of "/home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/install/ball_detector/lib/ball_detector/ball_detector_node" to ""
+[4.546s] -- Up-to-date: /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/install/ball_detector/share/ament_index/resource_index/package_run_dependencies/ball_detector
+[4.547s] -- Up-to-date: /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/install/ball_detector/share/ament_index/resource_index/parent_prefix_path/ball_detector
+[4.547s] -- Up-to-date: /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/environment/ament_prefix_path.sh
+[4.547s] -- Up-to-date: /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/environment/ament_prefix_path.dsv
+[4.547s] -- Up-to-date: /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/environment/path.sh
+[4.547s] -- Up-to-date: /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/environment/path.dsv
+[4.547s] -- Up-to-date: /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/local_setup.bash
+[4.547s] -- Up-to-date: /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/local_setup.sh
+[4.547s] -- Up-to-date: /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/local_setup.zsh
+[4.547s] -- Up-to-date: /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/local_setup.dsv
+[4.547s] -- Installing: /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/package.dsv
+[4.547s] -- Up-to-date: /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/install/ball_detector/share/ament_index/resource_index/packages/ball_detector
+[4.547s] -- Up-to-date: /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/cmake/ball_detectorConfig.cmake
+[4.547s] -- Up-to-date: /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/cmake/ball_detectorConfig-version.cmake
+[4.547s] -- Up-to-date: /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/package.xml
+[4.549s] Invoked command in '/home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/build/ball_detector' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/build/ball_detector

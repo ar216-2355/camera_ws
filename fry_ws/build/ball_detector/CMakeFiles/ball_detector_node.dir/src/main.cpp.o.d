@@ -1,5 +1,5 @@
 CMakeFiles/ball_detector_node.dir/src/main.cpp.o: \
- /home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp \
+ /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp \
  /usr/include/stdc-predef.h \
  /opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/13/csignal \
