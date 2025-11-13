@@ -1,2 +1,0 @@
-Invoking command in '/home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/build/ball_detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/build/ball_detector -- -j16 -l16
-Invoked command in '/home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/build/ball_detector' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/build/ball_detector -- -j16 -l16

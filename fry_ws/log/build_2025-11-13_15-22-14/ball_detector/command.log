@@ -1,0 +1,2 @@
+Invoking command in '/home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector -DCMAKE_INSTALL_PREFIX=/home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector
+Invoked command in '/home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector -DCMAKE_INSTALL_PREFIX=/home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector

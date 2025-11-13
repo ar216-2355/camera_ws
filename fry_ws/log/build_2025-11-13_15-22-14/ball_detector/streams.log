@@ -1,0 +1,32 @@
+[0.015s] Invoking command in '/home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector -DCMAKE_INSTALL_PREFIX=/home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector
+[0.088s] -- The C compiler identification is GNU 13.3.0
+[0.170s] -- The CXX compiler identification is GNU 13.3.0
+[0.190s] -- Detecting C compiler ABI info
+[0.315s] -- Detecting C compiler ABI info - done
+[0.334s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.334s] -- Detecting C compile features
+[0.335s] -- Detecting C compile features - done
+[0.347s] -- Detecting CXX compiler ABI info
+[0.484s] -- Detecting CXX compiler ABI info - done
+[0.500s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.500s] -- Detecting CXX compile features
+[0.501s] -- Detecting CXX compile features - done
+[0.515s] [31mCMake Error at CMakeLists.txt:9 (find_package):
+[0.516s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.516s]   has asked CMake to find a package configuration file provided by
+[0.516s]   "ament_cmake", but CMake did not find one.
+[0.516s] 
+[0.516s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.516s]   any of the following names:
+[0.516s] 
+[0.516s]     ament_cmakeConfig.cmake
+[0.516s]     ament_cmake-config.cmake
+[0.517s] 
+[0.517s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.517s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.517s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.517s]   has been installed.
+[0.517s] 
+[0.517s] [0m
+[0.517s] -- Configuring incomplete, errors occurred!
+[0.520s] Invoked command in '/home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector -DCMAKE_INSTALL_PREFIX=/home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector

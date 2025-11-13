@@ -2,7 +2,7 @@
 
 # since this file is sourced use either the provided AMENT_CURRENT_PREFIX
 # or fall back to the destination set at configure time
-: ${AMENT_CURRENT_PREFIX:="/home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/install/ball_detector"}
+: ${AMENT_CURRENT_PREFIX:="/home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector"}
 if [ ! -d "$AMENT_CURRENT_PREFIX" ]; then
   if [ -z "$COLCON_CURRENT_PREFIX" ]; then
     echo "The compile time prefix path '$AMENT_CURRENT_PREFIX' doesn't " \

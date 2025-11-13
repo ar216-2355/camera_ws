@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/src/ball_detector
+CMAKE_SOURCE_DIR = /home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/build/ball_detector
+CMAKE_BINARY_DIR = /home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/build/ball_detector && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/src/ball_detector /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/src/ball_detector /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/build/ball_detector /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/build/ball_detector /home/mihiro/camera_ws/collab_ws/camera_ws/fry_ws/build/ball_detector/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector /home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector /home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector /home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector /home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/uninstall.dir/depend
 
