@@ -211,19 +211,59 @@ cv::imshow("mask", mask);
              color = "Blue";
             else continue;  // 他の色は無視
 
-            // === ホモグラフィによる座標変換 ===
-            cv::Point2f xy = mapper.imageToWorld(center);
+            // --- PnP幾何モデルでカメラ座標系3D位置を算出 ---
+            double Z_cam = (fy * ball_radius_m) / radius_px;
+            double X_cam = (center.x - cx) * Z_cam / fx;
+            double Y_cam = (center.y - cy) * Z_cam / fy;
 
-            // === 高さZの推定 ===
-            double Z = (fx * ball_radius_m) / radius_px; // 単純なスケール推定
-            Z = std::max(0.0, Z - camera_height_m);      // カメラ高さとの差分として補正
+            // --- カメラ→ロボット座標変換 ---
+            // カメラ位置・姿勢（仮定：後で変更可能）
+            double cam_tx = 0.1;   // [m] ロボット中心から前方10cm
+            double cam_ty = 0.0;   // [m] 左右オフセット0
+            double cam_tz = 0.4;   // [m] カメラ高さ40cm
+            double cam_roll = 0.0;
+            double cam_pitch = -20.0 * M_PI / 180.0; // 下向き20度
+            double cam_yaw = 0.0;
+
+            // --- 回転行列生成 ---
+            cv::Mat Rz = (cv::Mat_<double>(3,3) <<
+                cos(cam_yaw), -sin(cam_yaw), 0,
+                sin(cam_yaw),  cos(cam_yaw), 0,
+                0, 0, 1);
+
+            cv::Mat Ry = (cv::Mat_<double>(3,3) <<
+                cos(cam_pitch), 0, sin(cam_pitch),
+                0, 1, 0,
+                -sin(cam_pitch), 0, cos(cam_pitch));
+
+            cv::Mat Rx = (cv::Mat_<double>(3,3) <<
+                1, 0, 0,
+                0, cos(cam_roll), -sin(cam_roll),
+                0, sin(cam_roll), cos(cam_roll));
+
+            cv::Mat R = Rz * Ry * Rx; // Z→Y→Xの順で回転
+            cv::Mat T = (cv::Mat_<double>(3,1) << cam_tx, cam_ty, cam_tz);
+            cv::Mat Pc = (cv::Mat_<double>(3,1) << X_cam, Y_cam, Z_cam);
+
+            // --- ロボット座標系へ変換 ---
+            cv::Mat Pr = R * Pc + T;
+            double X_robot = Pr.at<double>(0);
+            double Y_robot = Pr.at<double>(1);
+            double Z_robot = Pr.at<double>(2);
+
+            // --- 結果出力 ---
+            std::cout << color << " ball: "
+                    << "Camera(XYZ)=(" << X_cam << ", " << Y_cam << ", " << Z_cam << ") "
+                    << "Robot(XYZ)=(" << X_robot << ", " << Y_robot << ", " << Z_robot << ")\n";
+
+
 
             // === 結果表示 ===
             cv::circle(und, center, (int)radius_px, cv::Scalar(0, 255, 0), 2);
             cv::putText(und, color, center + cv::Point2f(5, -5),
                         cv::FONT_HERSHEY_SIMPLEX, 0.6, cv::Scalar(255, 255, 255), 2);
 
-            std::cout << color << " ball: (x=" << xy.x << ", y=" << xy.y << ", z=" << Z << ")\n";
+            // std::cout << color << " ball: (x=" << xy.x << ", y=" << xy.y << ", z=" << Z << ")\n";
 
             // === ROS2送信 ===
             geometry_msgs::msg::PointStamped msg;
