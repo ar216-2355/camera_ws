@@ -1,0 +1,26 @@
+[0.013s] Invoking command in '/home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector -- -j4 -l4
+[0.099s] [ 50%] [32mBuilding CXX object CMakeFiles/ball_detector_node.dir/src/main.cpp.o[0m
+[8.804s] [100%] [32m[1mLinking CXX executable ball_detector_node[0m
+[9.859s] [100%] Built target ball_detector_node
+[9.875s] Invoked command in '/home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector -- -j4 -l4
+[9.890s] Invoking command in '/home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector
+[9.899s] -- Install configuration: ""
+[9.900s] -- Up-to-date: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/camera_calib.yml
+[9.900s] -- Installing: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/lib/ball_detector/ball_detector_node
+[9.902s] -- Set non-toolchain portion of runtime path of "/home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/lib/ball_detector/ball_detector_node" to ""
+[9.903s] -- Up-to-date: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ament_index/resource_index/package_run_dependencies/ball_detector
+[9.903s] -- Up-to-date: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ament_index/resource_index/parent_prefix_path/ball_detector
+[9.903s] -- Up-to-date: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/environment/ament_prefix_path.sh
+[9.903s] -- Up-to-date: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/environment/ament_prefix_path.dsv
+[9.903s] -- Up-to-date: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/environment/path.sh
+[9.903s] -- Up-to-date: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/environment/path.dsv
+[9.904s] -- Up-to-date: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/local_setup.bash
+[9.904s] -- Up-to-date: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/local_setup.sh
+[9.904s] -- Up-to-date: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/local_setup.zsh
+[9.904s] -- Up-to-date: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/local_setup.dsv
+[9.904s] -- Installing: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/package.dsv
+[9.904s] -- Up-to-date: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ament_index/resource_index/packages/ball_detector
+[9.904s] -- Up-to-date: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/cmake/ball_detectorConfig.cmake
+[9.904s] -- Up-to-date: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/cmake/ball_detectorConfig-version.cmake
+[9.905s] -- Up-to-date: /home/crs3/camera_ws/camera_ws/fry_ws/install/ball_detector/share/ball_detector/package.xml
+[9.907s] Invoked command in '/home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/crs3/camera_ws/camera_ws/fry_ws/build/ball_detector

@@ -218,27 +218,30 @@ cv::imshow("mask", mask);
 
             // --- カメラ→ロボット座標変換 ---
             // カメラ位置・姿勢（仮定：後で変更可能）
-            double theta_x = 20.0 * M_PI / 180.0; // 下向き20度
+            double theta_x = -30.0 * M_PI / 180.0; // 下向き20度
             double theta_y = 0.0;
             double theta_z = 0.0;
             double x_0 = 0; //横オフセット[m]
-            double y_0 = 0.40; //上下オフセット[m]
-            double z_0 = 0.10; //前後オフセット[m]
+            double y_0 = 0.48; //上下オフセット[m]
+            double z_0 = 0.0; //前後オフセット[m]
 
             double X_robot = X_cam*(cos(theta_y)*cos(theta_x)*cos(theta_z)-sin(theta_y)*sin(theta_z))
                             + Y_cam*(-sin(theta_y)*cos(theta_x)*cos(theta_z)-cos(theta_y)*sin(theta_z))
                             + Z_cam*(sin(theta_x)*cos(theta_z))
                             + x_0;
 
-            double Y_robot = X_cam*(cos(theta_y)*cos(theta_x)*sin(theta_z)+sin(theta_y)*cos(theta_z))
+            double Y_robot_ = X_cam*(cos(theta_y)*cos(theta_x)*sin(theta_z)+sin(theta_y)*cos(theta_z))
                             + Y_cam*(-sin(theta_y)*cos(theta_x)*sin(theta_z)+cos(theta_y)*cos(theta_z))
                             + Z_cam*(sin(theta_x)*sin(theta_z))
                             + y_0;
 
-            double Z_robot = X_cam*(-cos(theta_y)*sin(theta_x))
+            double Z_robot_ = X_cam*(-cos(theta_y)*sin(theta_x))
                             + Y_cam*(-sin(theta_y)*sin(theta_x))
                             + Z_cam*(cos(theta_x))
                             + z_0;
+
+            double Z_robot = Y_robot_;
+            double Y_robot = Z_robot_;
  
 
             // double cam_tx = 0.1;   // [m] ロボット中心から前方10cm
