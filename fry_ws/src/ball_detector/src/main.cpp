@@ -99,7 +99,7 @@ int main(int argc, char** argv) {
     RCLCPP_INFO(logger_, "Homography mapper initialized.");
 
     // === パラメータ ===
-    const double ball_radius_m = 0.15;  // 15 cm
+    const double ball_radius_m = 0.095;  // 9.5 cm
     double camera_height_m = 0.40;      // 40 cm（変更可能）
 
     cv::Mat frame, und, hsv, gray, mask;
@@ -218,40 +218,63 @@ cv::imshow("mask", mask);
 
             // --- カメラ→ロボット座標変換 ---
             // カメラ位置・姿勢（仮定：後で変更可能）
-            double cam_tx = 0.1;   // [m] ロボット中心から前方10cm
-            double cam_ty = 0.0;   // [m] 左右オフセット0
-            double cam_tz = 0.4;   // [m] カメラ高さ40cm
-            double cam_roll = 20.0 * M_PI / 180.0; // 下向き20度
-            double cam_pitch = 0.0;
-            double cam_yaw = 0.0;
+            double theta_x = 20.0 * M_PI / 180.0; // 下向き20度
+            double theta_y = 0.0;
+            double theta_z = 0.0;
+            double x_0 = 0; //横オフセット[m]
+            double y_0 = 0.40; //上下オフセット[m]
+            double z_0 = 0.10; //前後オフセット[m]
 
-            // --- 回転行列生成 ---
-            cv::Mat Rz = (cv::Mat_<double>(3,3) <<
-                cos(cam_yaw), -sin(cam_yaw), 0,
-                sin(cam_yaw),  cos(cam_yaw), 0,
-                0, 0, 1);
+            double X_robot = X_cam*(cos(theta_y)*cos(theta_x)*cos(theta_z)-sin(theta_y)*sin(theta_z))
+                            + Y_cam*(-sin(theta_y)*cos(theta_x)*cos(theta_z)-cos(theta_y)*sin(theta_z))
+                            + Z_cam*(sin(theta_x)*cos(theta_z))
+                            + x_0;
 
-            cv::Mat Ry = (cv::Mat_<double>(3,3) <<
-                cos(cam_pitch), 0, sin(cam_pitch),
-                0, 1, 0,
-                -sin(cam_pitch), 0, cos(cam_pitch));
+            double Y_robot = X_cam*(cos(theta_y)*cos(theta_x)*sin(theta_z)+sin(theta_y)*cos(theta_z))
+                            + Y_cam*(-sin(theta_y)*cos(theta_x)*sin(theta_z)+cos(theta_y)*cos(theta_z))
+                            + Z_cam*(sin(theta_x)*sin(theta_z))
+                            + y_0;
 
-            cv::Mat Rx = (cv::Mat_<double>(3,3) <<
-                1, 0, 0,
-                0, cos(cam_roll), -sin(cam_roll),
-                0, sin(cam_roll), cos(cam_roll));
+            double Z_robot = X_cam*(-cos(theta_y)*sin(theta_x))
+                            + Y_cam*(-sin(theta_y)*sin(theta_x))
+                            + Z_cam*(cos(theta_x))
+                            + z_0;
+ 
 
-            cv::Mat R = Rz * Ry * Rx; // Z→Y→Xの順で回転
-            cv::Mat T = (cv::Mat_<double>(3,1) << cam_tx, cam_ty, cam_tz);
-            cv::Mat Pc = (cv::Mat_<double>(3,1) << X_cam, Y_cam, Z_cam);
+            // double cam_tx = 0.1;   // [m] ロボット中心から前方10cm
+            // double cam_ty = 0.0;   // [m] 左右オフセット0
+            // double cam_tz = 0.4;   // [m] カメラ高さ40cm
+            // double cam_roll = 20.0 * M_PI / 180.0; // 下向き20度
+            // double cam_pitch = 0.0;
+            // double cam_yaw = 0.0;
 
-            // --- ロボット座標系へ変換 ---
-            cv::Mat Pc_ = R * Pc ;
-            cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc_.at<double>(0),-Pc_.at<double>(2),Pc_.at<double>(1));
-            Pr = Pr + T;
-            double X_robot = Pr.at<double>(0);
-            double Y_robot = Pr.at<double>(1);
-            double Z_robot = Pr.at<double>(2);
+            // // --- 回転行列生成 ---
+            // cv::Mat Rz = (cv::Mat_<double>(3,3) <<
+            //     cos(cam_yaw), -sin(cam_yaw), 0,
+            //     sin(cam_yaw),  cos(cam_yaw), 0,
+            //     0, 0, 1);
+
+            // cv::Mat Ry = (cv::Mat_<double>(3,3) <<
+            //     cos(cam_pitch), 0, sin(cam_pitch),
+            //     0, 1, 0,
+            //     -sin(cam_pitch), 0, cos(cam_pitch));
+
+            // cv::Mat Rx = (cv::Mat_<double>(3,3) <<
+            //     1, 0, 0,
+            //     0, cos(cam_roll), -sin(cam_roll),
+            //     0, sin(cam_roll), cos(cam_roll));
+
+            // cv::Mat R = Rz * Ry * Rx; // Z→Y→Xの順で回転
+            // cv::Mat T = (cv::Mat_<double>(3,1) << cam_tx, cam_ty, cam_tz);
+            // cv::Mat Pc = (cv::Mat_<double>(3,1) << X_cam, Y_cam, Z_cam);
+
+            // // --- ロボット座標系へ変換 ---
+            // cv::Mat Pc_ = R * Pc ;
+            // cv::Mat Pr = (cv::Mat_<double>(3,1) << Pc_.at<double>(0),-Pc_.at<double>(2),Pc_.at<double>(1));
+            // Pr = Pr + T;
+            // double X_robot = Pr.at<double>(0);
+            // double Y_robot = Pr.at<double>(1);
+            // double Z_robot = Pr.at<double>(2);
 
             // --- 結果出力 ---
             std::cout << color << " ball: "
