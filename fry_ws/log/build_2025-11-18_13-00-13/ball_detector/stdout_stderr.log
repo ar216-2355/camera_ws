@@ -1,0 +1,8 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/ball_detector_node.dir/src/main.cpp.o[0m
+[01m[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[01m[K/home/crs3/camera_ws/camera_ws/fry_ws/src/ball_detector/src/main.cpp:291:13:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kstd[m[K’
+  291 |             [01;31m[Kstd[m[K::cout << color << " ball: "
+      |             [01;31m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/ball_detector_node.dir/build.make:76: CMakeFiles/ball_detector_node.dir/src/main.cpp.o] エラー 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ball_detector_node.dir/all] エラー 2
+gmake: *** [Makefile:146: all] エラー 2
