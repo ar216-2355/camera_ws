@@ -9,25 +9,25 @@
 
 using namespace std;
 
-struct HomographyMapper {
-    cv::Mat H, Hinv;
-    bool initialized = false;
+// struct HomographyMapper {
+//     cv::Mat H, Hinv;
+//     bool initialized = false;
 
-    void setPoints(const std::vector<cv::Point2f>& imgPts,
-                   const std::vector<cv::Point2f>& worldPts) {
-        H = cv::findHomography(imgPts, worldPts);
-        Hinv = H.inv();
-        initialized = true;
-    }
+//     void setPoints(const std::vector<cv::Point2f>& imgPts,
+//                    const std::vector<cv::Point2f>& worldPts) {
+//         H = cv::findHomography(imgPts, worldPts);
+//         Hinv = H.inv();
+//         initialized = true;
+//     }
 
-    cv::Point2f imageToWorld(const cv::Point2f& p) const {
-        if (!initialized) return {0, 0};
-        cv::Mat pt = (cv::Mat_<double>(3, 1) << p.x, p.y, 1);
-        cv::Mat w = H * pt;
-        return cv::Point2f(w.at<double>(0) / w.at<double>(2),
-                           w.at<double>(1) / w.at<double>(2));
-    }
-};
+//     cv::Point2f imageToWorld(const cv::Point2f& p) const {
+//         if (!initialized) return {0, 0};
+//         cv::Mat pt = (cv::Mat_<double>(3, 1) << p.x, p.y, 1);
+//         cv::Mat w = H * pt;
+//         return cv::Point2f(w.at<double>(0) / w.at<double>(2),
+//                            w.at<double>(1) / w.at<double>(2));
+//     }
+// };
 
 int main(int argc, char** argv) {
     rclcpp::init(argc, argv);
@@ -88,15 +88,15 @@ int main(int argc, char** argv) {
     RCLCPP_INFO(logger_, "Camera initialized.");
 
     // === ホモグラフィ設定 ===
-    HomographyMapper mapper;
-    std::vector<cv::Point2f> imgPts = {
-        {0, 0}, {640, 0}, {640, 480}, {0, 480}};
-    // 対応するロボット座標[m]（任意に変更可）
-    std::vector<cv::Point2f> worldPts = {
-        {-0.3, 0.3}, {0.3, 0.3}, {0.3, -0.3}, {-0.3, -0.3}};
-    mapper.setPoints(imgPts, worldPts);
+    // HomographyMapper mapper;
+    // std::vector<cv::Point2f> imgPts = {
+    //     {0, 0}, {640, 0}, {640, 480}, {0, 480}};
+    // // 対応するロボット座標[m]（任意に変更可）
+    // std::vector<cv::Point2f> worldPts = {
+    //     {-0.3, 0.3}, {0.3, 0.3}, {0.3, -0.3}, {-0.3, -0.3}};
+    // mapper.setPoints(imgPts, worldPts);
 
-    RCLCPP_INFO(logger_, "Homography mapper initialized.");
+    // RCLCPP_INFO(logger_, "Homography mapper initialized.");
 
     // === パラメータ ===
     const double ball_radius_m = 0.095;  // 9.5 cm
@@ -225,23 +225,28 @@ cv::imshow("mask", mask);
             double y_0 = 0.48; //上下オフセット[m]
             double z_0 = 0.0; //前後オフセット[m]
 
-            double X_robot = X_cam*(cos(theta_y)*cos(theta_x)*cos(theta_z)-sin(theta_y)*sin(theta_z))
-                            + Y_cam*(-sin(theta_y)*cos(theta_x)*cos(theta_z)-cos(theta_y)*sin(theta_z))
-                            + Z_cam*(sin(theta_x)*cos(theta_z))
-                            + x_0;
+            // double X_robot = X_cam*(cos(theta_y)*cos(theta_x)*cos(theta_z)-sin(theta_y)*sin(theta_z))
+            //                 + Y_cam*(-sin(theta_y)*cos(theta_x)*cos(theta_z)-cos(theta_y)*sin(theta_z))
+            //                 + Z_cam*(sin(theta_x)*cos(theta_z))
+            //                 + x_0;
 
-            double Y_robot_ = X_cam*(cos(theta_y)*cos(theta_x)*sin(theta_z)+sin(theta_y)*cos(theta_z))
-                            + Y_cam*(-sin(theta_y)*cos(theta_x)*sin(theta_z)+cos(theta_y)*cos(theta_z))
-                            + Z_cam*(sin(theta_x)*sin(theta_z))
-                            + y_0;
+            // double Y_robot_ = X_cam*(cos(theta_y)*cos(theta_x)*sin(theta_z)+sin(theta_y)*cos(theta_z))
+            //                 + Y_cam*(-sin(theta_y)*cos(theta_x)*sin(theta_z)+cos(theta_y)*cos(theta_z))
+            //                 + Z_cam*(sin(theta_x)*sin(theta_z))
+            //                 + y_0;
 
-            double Z_robot_ = X_cam*(-cos(theta_y)*sin(theta_x))
-                            + Y_cam*(-sin(theta_y)*sin(theta_x))
-                            + Z_cam*(cos(theta_x))
-                            + z_0;
+            // double Z_robot_ = X_cam*(-cos(theta_y)*sin(theta_x))
+            //                 + Y_cam*(-sin(theta_y)*sin(theta_x))
+            //                 + Z_cam*(cos(theta_x))
+            //                 + z_0;
+            double X_robot = X_cam + x_0;
+            double Y_robot = Y_cam*cos(theta_x) - Z_cam*sin(theta_x) + y_0;
+            double Z_robot = Y_cam*sin(theta_x) + Z_cam*cos(theta_x) + z_0;
+            
 
-            double Z_robot = Y_robot_;
-            double Y_robot = Z_robot_;
+
+            // double Z_robot = Y_robot_;
+            // double Y_robot = Z_robot_;
  
 
             // double cam_tx = 0.1;   // [m] ロボット中心から前方10cm
